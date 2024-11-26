@@ -1,0 +1,282 @@
+/* Global styling */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 
+  border-box;
+}
+
+body {
+  background-color: 
+  #f9c99f;
+  font-family: 
+  'Roboto', sans-serif;
+}
+
+#wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Global styling */
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 0.25rem solid #000;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  display: flex;
+  width: 60vw;
+  margin-top: 0;
+} 
+
+#header-img {
+  width: 5%;
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-top: 40px; 
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+.nav-link {font-weight: bold; color: #ff6353;}
+
+#action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#action > h2 {
+  margin-bottom: 0.5rem; 
+  margin-top: 7rem;
+  word-wrap: break-word;
+}
+
+#action input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#action input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #5ce074;
+}
+
+#action input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+  #action {
+    margin-top: 120px;
+  }
+}
+
+.our-products {
+  margin-top: 30px;
+}
+
+.product-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: red;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#presentation {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#presentation > video {
+  width: 95%;
+  height: 560px;
+}
+
+#prices {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.product > .item-type {
+  background-color: #ff6353;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #5ce074;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+  #prices {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.footer-links {color: #ff6353;}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
